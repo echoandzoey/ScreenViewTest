@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Zoom-like Interface</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-screen" class="video-container">
+      <video id="main-video" controls autoplay muted></video>
+    </div>
+    <div id="video-thumbnails">
+      <div class="thumbnail" data-video="video1.mp4">
+        <video src="video1.mp4" muted></video>
+      </div>
+      <div class="thumbnail" data-video="video2.mp4">
+        <video src="video2.mp4" muted></video>
+      </div>
+      <div class="thumbnail" data-video="video3.mp4">
+        <video src="video3.mp4" muted></video>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
