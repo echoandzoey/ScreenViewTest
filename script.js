@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   thumbnails.forEach((thumbnail) => {
     thumbnail.addEventListener("click", () => {
       const videoSrc = thumbnail.getAttribute("data-video");
+      const thumbnailVideo = thumbnail.querySelector("video");
       mainVideo.src = videoSrc;
+      mainVideo.currentTime = thumbnailVideo.currentTime;
       mainVideo.play();
     });
   });
